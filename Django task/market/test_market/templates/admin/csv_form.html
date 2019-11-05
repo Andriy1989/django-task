@@ -1,0 +1,16 @@
+
+
+    <div id="header">
+    <h1> Виберіть файл для завантаження</h1>
+	
+	</div>
+
+    <div>
+        <form action="." method="POST" enctype="multipart/form-data">
+            {{ form.as_p }}
+            {% csrf_token %}
+
+                <button type="submit">Upload CSV</button>
+        </form>
+    </div>
+    <br />
